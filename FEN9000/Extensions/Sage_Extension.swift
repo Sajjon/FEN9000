@@ -47,24 +47,7 @@ extension Board.Space {
         let black = UIColor.blackColor()
         let bg: UIColor = color.isWhite ? white : black
         let tc: UIColor = color.isWhite ? black : white
-//        spaceView.backgroundColor = bg
-
-
-        if piece == nil {
-            spaceView.backgroundColor = UIColor.redColor()
-        } else {
-            spaceView.backgroundColor = UIColor.yellowColor()
-        }
-
-
-
-        if square == .A3 {
-            if piece == nil {
-                spaceView.backgroundColor = UIColor.blueColor()
-            } else {
-                spaceView.backgroundColor = UIColor.purpleColor()
-            }
-        }
+        spaceView.backgroundColor = bg
 
         let label = UILabel(frame: textFrame)
 

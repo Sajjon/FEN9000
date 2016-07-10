@@ -18,7 +18,7 @@ struct HALMove {
 class ViewController: UIViewController {
 
     private lazy var halGame: HALGame = {
-        let game = Game(mode: .ComputerVsComputer, variant: .UpsideDown)
+        let game = Game(mode: .ComputerVsComputer, variant: .Standard)
         let halGame = HALGame(game: game, delegate: self)
         return halGame
     }()
