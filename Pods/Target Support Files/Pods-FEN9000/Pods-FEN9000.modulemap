@@ -1,0 +1,6 @@
+framework module Pods_FEN9000 {
+  umbrella header "Pods-FEN9000-umbrella.h"
+
+  export *
+  module * { export * }
+}

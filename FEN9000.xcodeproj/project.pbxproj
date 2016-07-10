@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BE926251D314BD700E4A833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE926241D314BD700E4A833 /* AppDelegate.swift */; };
-		7BE926271D314BD700E4A833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE926261D314BD700E4A833 /* ViewController.swift */; };
+		473BD2FEB4E5CFC8A88FCE6F /* Pods_FEN9000.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8244AEB6125E0DA655E3AB83 /* Pods_FEN9000.framework */; };
+		7B8C041D1D3153B6003C4247 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C041C1D3153B6003C4247 /* BoardView.swift */; };
+		7BE30EA31D326CB600B078C6 /* HAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE30E9F1D326CB600B078C6 /* HAL.swift */; };
+		7BE30EA41D326CB600B078C6 /* HALGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE30EA01D326CB600B078C6 /* HALGame.swift */; };
+		7BE30EA51D326CB600B078C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE30EA21D326CB600B078C6 /* ViewController.swift */; };
+		7BE30EA71D326CD000B078C6 /* NSDate_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE30EA61D326CD000B078C6 /* NSDate_Extension.swift */; };
+		7BE30EA91D326CF200B078C6 /* Sage_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE30EA81D326CF200B078C6 /* Sage_Extension.swift */; };
+		7BE30EAD1D326D4400B078C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE30EAB1D326D4400B078C6 /* AppDelegate.swift */; };
+		7BE30EAE1D326D4400B078C6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BE30EAC1D326D4400B078C6 /* Info.plist */; };
+		7BE30EB01D327ADE00B078C6 /* Extension_Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE30EAF1D327ADE00B078C6 /* Extension_Double.swift */; };
+		7BE30EB21D327FD800B078C6 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE30EB11D327FD800B078C6 /* Macros.swift */; };
 		7BE9262A1D314BD700E4A833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE926281D314BD700E4A833 /* Main.storyboard */; };
 		7BE9262C1D314BD700E4A833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE9262B1D314BD700E4A833 /* Assets.xcassets */; };
 		7BE9262F1D314BD700E4A833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE9262D1D314BD700E4A833 /* LaunchScreen.storyboard */; };
@@ -26,16 +35,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		178298CB7C169F6E3FFBD0F7 /* Pods-FEN9000.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FEN9000.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FEN9000/Pods-FEN9000.debug.xcconfig"; sourceTree = "<group>"; };
+		7B8C041C1D3153B6003C4247 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		7BE30E9F1D326CB600B078C6 /* HAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HAL.swift; sourceTree = "<group>"; };
+		7BE30EA01D326CB600B078C6 /* HALGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HALGame.swift; sourceTree = "<group>"; };
+		7BE30EA21D326CB600B078C6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BE30EA61D326CD000B078C6 /* NSDate_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate_Extension.swift; sourceTree = "<group>"; };
+		7BE30EA81D326CF200B078C6 /* Sage_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sage_Extension.swift; sourceTree = "<group>"; };
+		7BE30EAB1D326D4400B078C6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BE30EAC1D326D4400B078C6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE30EAF1D327ADE00B078C6 /* Extension_Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_Double.swift; sourceTree = "<group>"; };
+		7BE30EB11D327FD800B078C6 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
 		7BE926211D314BD700E4A833 /* FEN9000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEN9000.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BE926241D314BD700E4A833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BE926261D314BD700E4A833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BE926291D314BD700E4A833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BE9262B1D314BD700E4A833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BE9262E1D314BD700E4A833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7BE926301D314BD700E4A833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE926351D314BD700E4A833 /* FEN9000Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FEN9000Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE926391D314BD700E4A833 /* FEN9000Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FEN9000Tests.swift; sourceTree = "<group>"; };
 		7BE9263B1D314BD700E4A833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8244AEB6125E0DA655E3AB83 /* Pods_FEN9000.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FEN9000.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74DB6EFA4930846E3A3D8AF /* Pods-FEN9000.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FEN9000.release.xcconfig"; path = "Pods/Target Support Files/Pods-FEN9000/Pods-FEN9000.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473BD2FEB4E5CFC8A88FCE6F /* Pods_FEN9000.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +76,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22F2B525B787BED86B5645D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8244AEB6125E0DA655E3AB83 /* Pods_FEN9000.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B30015159971E3E610E9617 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				178298CB7C169F6E3FFBD0F7 /* Pods-FEN9000.debug.xcconfig */,
+				A74DB6EFA4930846E3A3D8AF /* Pods-FEN9000.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B8C041B1D3153A5003C4247 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B8C041C1D3153B6003C4247 /* BoardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BE30E9D1D326CB600B078C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7BE30EA61D326CD000B078C6 /* NSDate_Extension.swift */,
+				7BE30EA81D326CF200B078C6 /* Sage_Extension.swift */,
+				7BE30EAF1D327ADE00B078C6 /* Extension_Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7BE30E9E1D326CB600B078C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BE30E9F1D326CB600B078C6 /* HAL.swift */,
+				7BE30EA01D326CB600B078C6 /* HALGame.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BE30EA11D326CB600B078C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BE30EA21D326CB600B078C6 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7BE30EAA1D326D4400B078C6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7BE30EAB1D326D4400B078C6 /* AppDelegate.swift */,
+				7BE30EAC1D326D4400B078C6 /* Info.plist */,
+				7BE30EB11D327FD800B078C6 /* Macros.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		7BE926181D314BD700E4A833 = {
 			isa = PBXGroup;
 			children = (
 				7BE926231D314BD700E4A833 /* FEN9000 */,
 				7BE926381D314BD700E4A833 /* FEN9000Tests */,
 				7BE926221D314BD700E4A833 /* Products */,
+				7B30015159971E3E610E9617 /* Pods */,
+				22F2B525B787BED86B5645D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +161,14 @@
 		7BE926231D314BD700E4A833 /* FEN9000 */ = {
 			isa = PBXGroup;
 			children = (
-				7BE926241D314BD700E4A833 /* AppDelegate.swift */,
-				7BE926261D314BD700E4A833 /* ViewController.swift */,
-				7BE926281D314BD700E4A833 /* Main.storyboard */,
 				7BE9262B1D314BD700E4A833 /* Assets.xcassets */,
+				7BE30E9D1D326CB600B078C6 /* Extensions */,
 				7BE9262D1D314BD700E4A833 /* LaunchScreen.storyboard */,
-				7BE926301D314BD700E4A833 /* Info.plist */,
+				7BE926281D314BD700E4A833 /* Main.storyboard */,
+				7BE30E9E1D326CB600B078C6 /* Models */,
+				7BE30EAA1D326D4400B078C6 /* SupportingFiles */,
+				7BE30EA11D326CB600B078C6 /* ViewControllers */,
+				7B8C041B1D3153A5003C4247 /* Views */,
 			);
 			path = FEN9000;
 			sourceTree = "<group>";
@@ -103,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BE9263E1D314BD700E4A833 /* Build configuration list for PBXNativeTarget "FEN9000" */;
 			buildPhases = (
+				45928CA05EAF651B8D796B8F /* [CP] Check Pods Manifest.lock */,
 				7BE9261D1D314BD700E4A833 /* Sources */,
 				7BE9261E1D314BD700E4A833 /* Frameworks */,
 				7BE9261F1D314BD700E4A833 /* Resources */,
+				08053536DB55205424BD9E9D /* [CP] Embed Pods Frameworks */,
+				C9040C8B727D3D58DEB5EB3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE30EAE1D326D4400B078C6 /* Info.plist in Resources */,
 				7BE9262F1D314BD700E4A833 /* LaunchScreen.storyboard in Resources */,
 				7BE9262C1D314BD700E4A833 /* Assets.xcassets in Resources */,
 				7BE9262A1D314BD700E4A833 /* Main.storyboard in Resources */,
@@ -192,13 +282,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08053536DB55205424BD9E9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FEN9000/Pods-FEN9000-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45928CA05EAF651B8D796B8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9040C8B727D3D58DEB5EB3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FEN9000/Pods-FEN9000-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BE9261D1D314BD700E4A833 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BE926271D314BD700E4A833 /* ViewController.swift in Sources */,
-				7BE926251D314BD700E4A833 /* AppDelegate.swift in Sources */,
+				7BE30EB21D327FD800B078C6 /* Macros.swift in Sources */,
+				7BE30EA71D326CD000B078C6 /* NSDate_Extension.swift in Sources */,
+				7BE30EA51D326CB600B078C6 /* ViewController.swift in Sources */,
+				7BE30EB01D327ADE00B078C6 /* Extension_Double.swift in Sources */,
+				7B8C041D1D3153B6003C4247 /* BoardView.swift in Sources */,
+				7BE30EA91D326CF200B078C6 /* Sage_Extension.swift in Sources */,
+				7BE30EAD1D326D4400B078C6 /* AppDelegate.swift in Sources */,
+				7BE30EA31D326CB600B078C6 /* HAL.swift in Sources */,
+				7BE30EA41D326CB600B078C6 /* HALGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +470,10 @@
 		};
 		7BE9263F1D314BD700E4A833 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 178298CB7C169F6E3FFBD0F7 /* Pods-FEN9000.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FEN9000/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FEN9000/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sajjon.FEN9000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,9 +482,10 @@
 		};
 		7BE926401D314BD700E4A833 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74DB6EFA4930846E3A3D8AF /* Pods-FEN9000.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FEN9000/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FEN9000/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sajjon.FEN9000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +535,7 @@
 				7BE926401D314BD700E4A833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BE926411D314BD700E4A833 /* Build configuration list for PBXNativeTarget "FEN9000Tests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +544,7 @@
 				7BE926431D314BD700E4A833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
