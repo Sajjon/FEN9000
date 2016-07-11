@@ -49,6 +49,7 @@ extension Board.Space {
         let tc: UIColor = color.isWhite ? black : white
         spaceView.backgroundColor = bg
 
+
         let label = UILabel(frame: textFrame)
 
         label.textAlignment = .Center

@@ -50,7 +50,7 @@ class HAL: ChessAI {
     private func optimalMoveIn(game game: Game, thinkingAheadBy depth: Int) -> HALMove? {
         guard var bestMoveSoFar = game.availableMoves().first else { return nil }
         var valueOfBestMove = Double.min
-        let dueDate = NSDate.future(3, unit: .Second)
+        let dueDate = NSDate.future(thinkTimeMs*1000, unit: .Nanosecond)
         var alpha = Double.min
         var beta = Double.max
         for depthIndex in 0..<depth {

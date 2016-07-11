@@ -62,6 +62,6 @@ private extension ViewController {
 
 extension ViewController: GameDelegate {
     func boardChanged() {
-        boardView.boardChanged()
+        self.boardView.boardChanged()
     }
 }

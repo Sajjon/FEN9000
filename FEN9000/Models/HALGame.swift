@@ -13,7 +13,9 @@ protocol GameDelegate: class {
     func boardChanged()
 }
 
-class HALGame {
+let timerTime: NSTimeInterval = 0.5
+let thinkTimeMs: Int = 400
+class HALGame: NSObject {
 
     let game: Game
     private weak var delegate: GameDelegate?
@@ -32,13 +34,26 @@ class HALGame {
         return player
     }
 
-
+    private var timer: NSTimer!
     func start() {
-        while !game.isFinished {
-            performNextMove()
-            delegate?.boardChanged()
-        }
+        timer = NSTimer(timeInterval: timerTime, target: self, selector: #selector(someBackgroundTask(_:)), userInfo: nil, repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSDefaultRunLoopMode)
     }
+
+    func someBackgroundTask(timer:NSTimer) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
+            guard !self.game.isFinished else {
+                self.timer.invalidate()
+                return
+            }
+            self.performNextMove()
+
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.delegate?.boardChanged()
+            })
+        })
+    }
+
 
     private func performNextMove() {
         playerTurn.performNextMove()

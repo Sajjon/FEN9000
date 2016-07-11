@@ -21,3 +21,10 @@ func delay(delay: Double, closure: Closure) {
         closure
     )
 }
+
+func onMain(closure: Closure) {
+    dispatch_async(dispatch_get_main_queue()) {
+        () -> Void in
+        closure()
+    }
+}
