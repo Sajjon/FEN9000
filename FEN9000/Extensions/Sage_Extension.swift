@@ -15,6 +15,20 @@ extension Board {
             space.drawInView(view: view)
         }
     }
+
+    func blackSpaces() -> [Space] {
+        let blackSpaces = self.filter { $0.color.isBlack }
+        return blackSpaces
+    }
+
+    func whiteSpaces() -> [Space] {
+        let blackSpaces = self.filter { $0.color.isWhite }
+        return blackSpaces
+    }
+
+    func spacesForPiecesGuardingPieace(atSquare square: Square) -> [Space] {
+        
+    }
 }
 
 extension Piece {

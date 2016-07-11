@@ -17,6 +17,11 @@ class HAL: ChessAI {
     private let game: Game
     private let myColor: Color
 
+    private var isMaxPlayer: Bool {
+        let maxPlayer = myColor == .White
+        return maxPlayer
+    }
+
     private var board: Board {
         return game.board
     }
@@ -50,12 +55,14 @@ class HAL: ChessAI {
     private func optimalMoveIn(game game: Game, thinkingAheadBy depth: Int) -> HALMove? {
         guard var bestMoveSoFar = game.availableMoves().first else { return nil }
         var valueOfBestMove = Double.min
-        let dueDate = NSDate.future(thinkTimeMs*1000, unit: .Nanosecond)
+        let dueDate = NSDate.future(inMilliseconds: thinkTimeMs)
         var alpha = Double.min
         var beta = Double.max
-        for depthIndex in 0..<depth {
+        outerloop: for depthIndex in 0..<depth {
             for move in game.availableMoves() {
-                guard dueDate.moreMsLeftThan(10) else { break }
+                guard dueDate.moreMsLeftThan(10) else {
+                    print("breaking from outerloop")
+                    break outerloop }
                 let gameCopy = game.copy()
                 do {
                     try gameCopy.execute(move: move)
@@ -68,9 +75,10 @@ class HAL: ChessAI {
                                             depth: depthIndex,
                                             alpha: alpha,
                                             beta: beta,
-                                            maxPlayer: false)
+                                            maxPlayer: isMaxPlayer)
 
                 if valueOfMove > valueOfBestMove {
+                    print("Found better move, value was: \(valueOfBestMove), new: \(valueOfMove)")
                     valueOfBestMove = valueOfMove
                     bestMoveSoFar = move
                 }
@@ -86,8 +94,17 @@ class HAL: ChessAI {
         var alpha = alpha
         var beta = beta
         let availableMoves = game.availableMoves()
-        guard depth > 0 && dueDate.moreMsLeftThan(30)
+        print("Alpha: \(alpha), beta: \(beta), \(availableMoves.count) available moves")
+
+        /* Base case for recursion */
+        let hasTime = dueDate.moreMsLeftThan(30)
+        guard depth > 0 && hasTime
             else {
+                if depth <= 0 {
+//                    print("depth reached")
+                } else {
+                    print("no time")
+                }
                 let value = evaluate(game: game)
                 return value
         }
@@ -106,6 +123,7 @@ class HAL: ChessAI {
                 beta = min(beta, newAlphaBeta)
             }
             if beta <= alpha {
+                print("alpha LEQ beta => break")
                 break
             }
         }
@@ -114,6 +132,9 @@ class HAL: ChessAI {
     }
 
     private func evaluate(game game: Game) -> Double {
+        for space in game.board {
+            if space.piece
+        }
         let myPiecesValue = valueOf(pieces: myPieces)
         let opponentPiecesValue = valueOf(pieces: opponentPieces)
         let value = myPiecesValue - opponentPiecesValue

@@ -8,6 +8,8 @@
 
 import Foundation
 
+let millisecondPerNanosecond = 1000000
+
 extension NSDate {
     func moreMsLeftThan(milliseconds: Int) -> Bool {
         let millisecondsUntil = millisecondsFrom(NSDate())
@@ -17,7 +19,7 @@ extension NSDate {
 
     func millisecondsFrom(date: NSDate) -> Int {
         let nanoseconds = nanosecondsFrom(date)
-        let milliseconds = nanoseconds/1000
+        let milliseconds = Int(round(Double(nanoseconds)/Double(millisecondPerNanosecond)))
         return milliseconds
     }
 
@@ -33,6 +35,11 @@ extension NSDate {
 
     class func future(amount: Int, unit: NSCalendarUnit) -> NSDate {
         return NSDate().add(amount, unit: unit)
+    }
+
+    class func future(inMilliseconds milliseconds: Int) -> NSDate {
+        let nanoseconds = milliseconds * millisecondPerNanosecond
+        return future(nanoseconds, unit: .Nanosecond)
     }
 
     func add(amount: Int, unit: NSCalendarUnit) -> NSDate {
